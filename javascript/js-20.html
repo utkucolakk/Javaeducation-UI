@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Assignments</h1>
+    <h2>Remainder Assignment</h2>
+    <h3>The %= Operator</h3>
+    <p id="number"></p>
+    <p id="string"></p>
+    <p id="boolean"></p>
+    <p id="person"></p>
+    <p id="car"></p>
+    <p id="date"></p>
+
+    <script>
+        // Numbers:
+        let length = 16;
+        let weight = 7.5;
+
+        // Strings:
+        let color = "Yellow";
+        let lastName = "Johnson";
+
+        // Booleans
+        let x = true;
+        let y = false;
+
+        // Object:
+        const person = { firstName: "John", lastName: "Doe" };
+
+        // Array object:
+        const cars = ["Saab", "Volvo", "BMW"];
+
+        // Date object:
+        const date = new Date("2022-03-25");
+        let currDate = date.getDate();
+        let currMonth = date.getMonth() + 1; //Months are zero based
+        let currYear = date.getFullYear();
+        let formattedDate = currDate + "/" + currMonth + "/" + currYear;
+
+        document.getElementById("number").innerHTML = "The length is " + length + " and the weight is " + weight;
+        document.getElementById("string").innerHTML = "The color is " + color + " and the last name is " + lastName;
+        document.getElementById("boolean").innerHTML = "The value of x is " + x + " and the value of y is " + y;
+        document.getElementById("person").innerHTML = "The first name is " + person.firstName + " and the last name is " + person.lastName;
+        document.getElementById("car").innerHTML = "The first car is " + cars[0] + " and the second car is " + cars[1];
+        document.getElementById("date").innerHTML = "The date is " + formattedDate;
+
+    </script>
+</body>
+
+</html>
